@@ -1,0 +1,43 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "autobuild",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/project/scripts"
+            },
+            "command": "${workspaceFolder}/project/scripts/autobuild.sh"
+        },
+        {
+            "label": "autobuild_full",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/project/scripts"
+            },
+            "command": "${workspaceFolder}/project/scripts/autobuild_full.sh"
+        },
+        {
+            "label": "mac_start",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/project/scripts"
+            },
+            "command": "${workspaceFolder}/project/scripts/mac_start.sh"
+        }
+    ]
+}
