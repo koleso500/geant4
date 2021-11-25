@@ -26,18 +26,6 @@
                 "cwd": "${workspaceFolder}/project/scripts"
             },
             "command": "${workspaceFolder}/project/scripts/autobuild_full.sh"
-        },
-        {
-            "label": "mac_start",
-            "type": "shell",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "options": {
-                "cwd": "${workspaceFolder}/project/scripts"
-            },
-            "command": "${workspaceFolder}/project/scripts/mac_start.sh"
         }
     ]
 }
