@@ -1,14 +1,12 @@
 /run/initialize
 
 /gps/pos/type Plane
-/gps/pos/shape Circle
-/gps/pos/radius 3 mm
-/gps/pos/centre 0 0 -9 cm
+/gps/pos/centre 30 0 0 cm
 
-/gps/direction 0 0 1
+/gps/direction -1 0 0
 
 /gps/particle e-
-/gps/energy 300 keV
+/gps/energy 5 MeV
 
 /run/printProgress 100
-/run/beamOn 1000
+/run/beamOn 10
