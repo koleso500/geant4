@@ -9,4 +9,4 @@
 /gps/energy 5 MeV
 
 /run/printProgress 100
-/run/beamOn 10
+/run/beamOn 10000
