@@ -26,11 +26,8 @@ DetectorConstruction::~DetectorConstruction()
 G4VPhysicalVolume* DetectorConstruction::Construct()
 {
   G4NistManager* nist = G4NistManager::Instance();
-
   G4double world_sizeX = 50*cm, world_sizeY = 30*cm, world_sizeZ = 30*cm;
-  
   G4bool checkOverlaps = true; 
-  
   G4Material* world_material = nist->FindOrBuildMaterial("G4_Galactic");
 
   G4Box* solidWorld = new G4Box("World", world_sizeX, world_sizeY, world_sizeZ);

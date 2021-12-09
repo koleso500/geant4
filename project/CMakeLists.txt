@@ -45,7 +45,6 @@ target_link_libraries(main ${Geant4_LIBRARIES})
 set(main_SCRIPTS
   init_vis.mac
   gps.mac
-  vis.mac
   )
 
 foreach(_script ${main_SCRIPTS})

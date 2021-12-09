@@ -1,6 +1,6 @@
 /run/initialize
 
-/gps/pos/type Plane
+/gps/pos/type Point
 /gps/pos/centre 30 0 0 cm
 
 /gps/direction -1 0 0

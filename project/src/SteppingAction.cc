@@ -27,22 +27,18 @@ void SteppingAction::UserSteppingAction(const G4Step *step)
 
   // check if we are in scoring volume
   // G4cout << volume->GetName() << G4endl;
-  if (volume->GetName() != "Target")
+  if (volume->GetName() != "Plast")
     return;
 
   if (not step->IsLastStepInVolume()){
     return;
   }
+  G4cout << volume->GetName() << G4endl;
 
   auto track = step->GetTrack();
   auto particle = track->GetDynamicParticle();
   auto energy = particle->GetKineticEnergy();
   auto particle_name = particle->GetDefinition()->GetParticleName();
-
-  if (particle_name != "gamma"){
-    return;
-  }
-
   auto pos = step->GetPreStepPoint()->GetPosition();
   auto vel = step->GetPreStepPoint()->GetMomentum();
 
