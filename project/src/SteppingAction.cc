@@ -33,7 +33,6 @@ void SteppingAction::UserSteppingAction(const G4Step *step)
   if (not step->IsLastStepInVolume()){
     return;
   }
-  G4cout << volume->GetName() << G4endl;
 
   auto track = step->GetTrack();
   auto particle = track->GetDynamicParticle();
