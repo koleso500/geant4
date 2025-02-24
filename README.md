@@ -1,4 +1,4 @@
-#Bachelor degree
+Bachelor degree
 
 
 
